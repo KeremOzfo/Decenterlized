@@ -31,7 +31,7 @@ batch = 64
 
 trainloaders, testloader = data_loader.FMNIST_data(batch, N_w, N_s)
 
-connectionMatrix = np.empty([15,N_n])
+connectionMatrix = np.empty([N_w,N_n])
 seperation = 2
 for worker in range(N_w):
     index = worker - ((N_n / 2) * seperation)
